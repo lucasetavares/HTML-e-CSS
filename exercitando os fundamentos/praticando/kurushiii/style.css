@@ -1,0 +1,54 @@
+@charset "UTF-8";
+
+h1 {
+    color: red;
+}
+
+
+h2 {
+    color: red;
+}
+
+@media (width: 375px) {
+    h1 {
+        color: blanchedalmond;
+    }
+
+    h2 {
+        color: brown;
+    }
+}
+
+/* celulares */
+@media (max-width: 530px) {
+    h1 {
+        color: aqua;
+    }
+
+    h2 {
+        color: aquamarine;
+    }
+}
+
+
+/* tablets */
+@media (min-width: 768px) and (max-width: 1024px) {
+    h1 {
+        color: violet;
+    }
+
+    h2 {
+        color: violet;
+    }
+}
+
+/* orientação horizontal */
+@media (orientation: landscape) {
+    h1 {
+        color: blue;
+    }
+
+    h2 {
+        color: yellowgreen;
+    }
+}

@@ -105,7 +105,10 @@ main h1 {
 main h2 {
     font-family: var(--fonte-titulo);
     color: var(--cor1);
+    background-image: linear-gradient(to right, transparent, var(--cor6) 1%, transparent 98%);
     font-size: 1.5em;
+    padding: 10px;
+    border-radius: 5px;
 }
 
 main p {
@@ -125,12 +128,24 @@ main img {
  h1 {
     font-family: var(--fonte-titulo);
     color: var(--cor1);
+    text-align: center;
 }
 
 
 h2 {
     font-family: var(--fonte-titulo);
     color: var(--cor1);
+    padding: 10px;
+}
+
+@media (max-width: 530px) {
+    h2 {
+        color: green;
+}
+}
+
+p {
+    padding: 5px;
 }
 
 p > a {
