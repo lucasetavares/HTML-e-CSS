@@ -12,6 +12,7 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
 
         td, th {
@@ -19,9 +20,29 @@
             padding: 10px;
         }
 
-        thead {
+        
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
             background-color: gray;
+        }
+        
+        tbody > tr:nth-child(2n) {
+            background-color: lightgreen;
+        }
+
+        thead {
+            background-color: rgb(52, 52, 52);
             color: white;
+
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: rgb(52, 52, 52);
+            color: white
         }
 
         td.num {
@@ -32,10 +53,11 @@
 <body>
     <h1>Tabelas Grandes</h1>
     <table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 125px;">População</th>
             </tr>
         </thead>
         <tbody>
@@ -51,9 +73,13 @@
                 <td>Rio de Janeiro</td>
                 <td class="num">17 264 943</td>
             </tr>
+            <tr>
+                <td>Jabuticabi</td>
+                <td class="num">22 613 531</td>
+            </tr>
         </tbody>
         <tfoot>
-                <th>Total de Habitantes</th>
+                <th scope="row" style="background-color: rgb(52, 52, 52); color: white" >Total de Habitantes</th>
                 <td class="num"><strong>84 250 500</strong></td>
         </tfoot>
     </table>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aakuo Kazasoou</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            padding: 10px;
+            width: 500px;
+            height: 400px;
+        }
+
+        td, th {
+            border: 2px solid black;
+            padding: 10px;
+            text-align: center;
+            
+        }
+
+        thead {
+            text-align: center;
+            font-weight: bolder;
+            background-color: gray;
+            color: white;
+        }
+
+        tbody > tr > th {
+            background-color: gray;
+            color: white;
+            font-weight: bolder;
+            text-align: center;
+        }
+
+        .uno {
+            background-color: white;
+            color: black;
+            text-align: center;
+            font-weight: bolder;
+        }
+
+        .media {
+            text-align: center;
+            font-weight: bolder;
+            background-color: gray;
+            color: white;
+        }
+
+        .just {
+            text-align: justify;
+
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th rowspan="2">Área</th>
+                <th colspan="2" rowspan="2">Disciplinas</th>
+                <th colspan="2">Notas</th>
+                <th rowspan="2">Média</th>
+            </tr>
+            <tr>
+                <th>Nota 1</th>
+                <th>Nota 2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th rowspan="4" class="uno">Exatas</th>
+                <td colspan="2">Biologia</td>
+                <td>6</td>
+                <td>6</td>
+                <td>6</td>
+            </tr>
+            <tr>
+                <td colspan="2">Matemática</td>
+                <td>6.5</td>
+                <td>6.5</td>
+                <td>6.5</td>       
+            </tr>
+            <tr>
+                <td colspan="2">Física</td>
+                <td>7</td>
+                <td>7</td>
+                <td>7</td>
+            </tr>
+            <tr>
+                <td colspan="2">Química</td>
+                <td>5.5</td>
+                <td>6.5</td>
+                <td>6</td>
+            </tr>
+            <tr>
+                <th colspan="5" class="just">Média de Exatas</th>
+                <td class="media">6,4</td>
+            </tr>
+            <tr>
+                <th rowspan=2 class="uno">Humanas</th>
+                <td colspan=2>História</td>
+                <td>6</td>
+                <td>4</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td colspan="2">Geografia</td>
+                <td>7</td>
+                <td>8</td>
+                <td>7.5</td>
+            </tr>
+            <tr>
+                <th colspan="5" class="just">Média de Humanas</th>
+                <td class="media">6,25</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
